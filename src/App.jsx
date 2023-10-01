@@ -1,0 +1,31 @@
+import {
+	BrowserRouter as Router,
+	Routes,
+	Route,
+	Navigate,
+} from 'react-router-dom';
+import About from './Pages/About';
+import Gallery from './Pages/Gallery';
+import Home from './Pages/Home';
+import Packages from './Pages/Packages';
+import PageNotFound from './Pages/PageNotFound';
+
+function App() {
+	return (
+		<>
+			<Router>
+				<Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/404' element={<PageNotFound />} />
+          <Route path='*' element={<Navigate to='404' replace='true' />} />
+
+          <Route path='/about' element={<About />} />
+          <Route path='/gallery' element={<Gallery />} />
+          <Route path='/packages' element={<Packages />} />
+        </Routes>
+			</Router>
+		</>
+	);
+}
+
+export default App;
