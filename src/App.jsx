@@ -9,20 +9,22 @@ import Gallery from './Pages/Gallery';
 import Home from './Pages/Home';
 import Packages from './Pages/Packages';
 import PageNotFound from './Pages/PageNotFound';
+import Contact from './Pages/Contact';
 
 function App() {
 	return (
 		<>
 			<Router>
 				<Routes>
-          <Route exact path='/' element={<Home />} />
-          <Route path='/404' element={<PageNotFound />} />
-          <Route path='*' element={<Navigate to='404' replace='true' />} />
+					<Route exact path='/' element={<Home />} />
+					<Route path='/404' element={<PageNotFound />} />
+					<Route path='*' element={<Navigate to='404' replace='true' />} />
 
-          <Route path='/about' element={<About />} />
-          <Route path='/gallery' element={<Gallery />} />
-          <Route path='/packages' element={<Packages />} />
-        </Routes>
+					<Route path='/about' element={<About />} />
+					<Route path='/contact' element={<Contact />} />
+					<Route path='/gallery' element={<Gallery />} />
+					<Route path='/packages' element={<Packages />} />
+				</Routes>
 			</Router>
 		</>
 	);
