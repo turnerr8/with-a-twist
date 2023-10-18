@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+}
+
+@layer components {
+	.contact-input {
+		@apply rounded-md bg-slate-300 text-xl py-2 px-3 focus:placeholder:opacity-0  focus:caret-transparent focus:outline-slate-800;
+	}
+	.contact-lable {
+		@apply text-slate-700 text-sm;
+	}
+	.hero-bg {
+		background-image: url('./assets/trailer-hero.jpg');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: cover;
+	}
+}
+
+@layer utilities {
+}
