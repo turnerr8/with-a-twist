@@ -17,13 +17,14 @@ function App() {
 			<Router>
 				<Routes>
 					<Route exact path='/' element={<Home />} />
-					<Route path='/404' element={<PageNotFound />} />
-					<Route path='*' element={<Navigate to='404' replace='true' />} />
 
 					<Route path='/about' element={<About />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/gallery' element={<Gallery />} />
 					<Route path='/packages' element={<Packages />} />
+
+					<Route path='/404' element={<PageNotFound />} />
+					<Route path='*' element={<Navigate to='404' replace='true' />} />
 				</Routes>
 			</Router>
 		</>

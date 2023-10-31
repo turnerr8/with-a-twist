@@ -2,7 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Bekinder';
+	src: url('src/assets/fonts/Bekinder Bold.ttf') format('truetype');
+}
+
 @layer base {
+	html {
+		overflow-x: hidden !important;
+	}
+	.bekinder {
+		font-family: Bekinder, sans-serif;
+	}
 }
 
 @layer components {
