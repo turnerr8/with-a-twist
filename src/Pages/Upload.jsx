@@ -7,29 +7,37 @@ export default function Upload() {
 	const [password, setPassword] = useState('');
 	const [user, setUser] = useState(null);
 	const [image, setImage] = useState([]);
-    const [uploadStatus, setUploadStatus] = useState(null)
+	const [uploadStatus, setUploadStatus] = useState(null);
 
 	const handleUploadChange = (e) => {
 		const file = e.target.files[0];
-		setImage([...image, file]);
-		console.log(image);
+		if (1 > file.size / 1024 / 1024) {
+			setImage([...image, file]);
+		} else {
+			alert(
+				`File is ${
+					file.size / 1024 / 1024
+				}Mibs. Please upload image below 1 MiB`
+			);
+		}
 	};
 
-    const handleUploadHelper = () => {
-        handleUpload(image)
-        .then((result)=>{
-            setUploadStatus(result)
-            console.log(uploadStatus)
-        })
-
-    }
+	const handleUploadHelper = () => {
+		if (image.length > 0) {
+			handleUpload(image).then((result) => {
+				setImage([]);
+				setUploadStatus(result);
+				console.log(`result of file upload is ${result}`);
+			});
+		} else {
+			alert('please select a file to upload');
+		}
+	};
 
 	const handleLogin = async () => {
-		console.log(`user: ${email}, password: ${password}`);
 		try {
 			const usercred = await signInWithEmailAndPassword(auth, email, password);
 			setUser(usercred.user);
-			console.log(user);
 		} catch (err) {
 			console.error(err.message);
 		}
@@ -47,7 +55,6 @@ export default function Upload() {
 					{image && (
 						<>
 							{image.map((curImage) => {
-								console.log(curImage);
 								return (
 									<img
 										src={URL.createObjectURL(curImage)}
