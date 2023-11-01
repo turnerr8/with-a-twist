@@ -10,6 +10,7 @@ import Home from './Pages/Home';
 import Packages from './Pages/Packages';
 import PageNotFound from './Pages/PageNotFound';
 import Contact from './Pages/Contact';
+import Upload from './Pages/Upload';
 
 function App() {
 	return (
@@ -22,6 +23,7 @@ function App() {
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/gallery' element={<Gallery />} />
 					<Route path='/packages' element={<Packages />} />
+					<Route path='/upload' element={<Upload />} />
 
 					<Route path='/404' element={<PageNotFound />} />
 					<Route path='*' element={<Navigate to='404' replace='true' />} />
