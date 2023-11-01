@@ -3,7 +3,14 @@ import { initializeApp } from 'firebase/app';
 //import { getAnalytics } from 'firebase/analytics';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { getAuth } from 'firebase/auth';
-import { collection, getFirestore, addDoc, getDocs } from 'firebase/firestore';
+import {
+	collection,
+	getFirestore,
+	addDoc,
+	getDocs,
+	limit,
+	query,
+} from 'firebase/firestore';
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -61,7 +68,8 @@ export const handleUpload = async (files) => {
 //imagesCollection
 export const getImages = async () => {
 	try {
-		const querySnapshot = await getDocs(imagesCollection);
+		const limitedCollection = query(imagesCollection, limit(30));
+		const querySnapshot = await getDocs(limitedCollection);
 		const data = querySnapshot.docs.map((doc) => ({
 			id: doc.id,
 			...doc.data(),

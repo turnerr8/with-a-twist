@@ -7,6 +7,7 @@ export default function Contact() {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 		console.log(inputs);
+		setInputs({});
 	};
 
 	const handleChange = (e) => {
@@ -150,7 +151,7 @@ export default function Contact() {
 							></textarea>
 						</div>
 						<input
-							className='contact-input !grow-0 w-1/2 mt-5 bg-slate-900 text-slate-100'
+							className='contact-input !grow-0 w-1/2 mt-5 bg-slate-900 text-slate-100 focus:text-slate-900 focus:bg-slate-100 cursor-pointer hover:text-slate-900 hover:bg-slate-100'
 							type='submit'
 							value='Send'
 						/>
