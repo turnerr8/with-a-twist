@@ -7,7 +7,7 @@ export default function Upload() {
 	const [password, setPassword] = useState('');
 	const [user, setUser] = useState(null);
 	const [image, setImage] = useState([]);
-	const [uploadStatus, setUploadStatus] = useState(null);
+	//const [uploadStatus, setUploadStatus] = useState(null);
 
 	const handleUploadChange = (e) => {
 		const file = e.target.files[0];
@@ -26,7 +26,7 @@ export default function Upload() {
 		if (image.length > 0) {
 			handleUpload(image).then((result) => {
 				setImage([]);
-				setUploadStatus(result);
+				//setUploadStatus(result);
 				console.log(`result of file upload is ${result}`);
 			});
 		} else {
