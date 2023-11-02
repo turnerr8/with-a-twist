@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
 const imgs = [
 	'/src/assets/img/trailer-cheers.jpg',
-	'src/assets/img/IMG_2331.JPG',
 	'src/assets/img/IMG_2315.JPG',
+	'src/assets/img/IMG_2331.JPG',
 ];
 
 export default function Home() {
