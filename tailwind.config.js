@@ -2,7 +2,12 @@
 export default {
 	content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
 	theme: {
-		extend: {},
+		extend: {
+			gridTemplateColumns: {
+				gallery: 'repeat(auto-fill, minmax(340px, 1fr))',
+				'gallery-md': 'repeat(auto-fill, minmax(150px, 1fr));',
+			},
+		},
 	},
 	plugins: [],
 };

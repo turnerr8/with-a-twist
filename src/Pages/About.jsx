@@ -15,7 +15,7 @@ export default function About() {
 					}}
 				></div>
 			</div>
-			<div className='px-16 py-24'>
+			<div className=' px-10 md:px-16 py-16 md:py-24'>
 				<p>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic corporis
 					aliquid earum sit repellat aliquam, recusandae illum sint.

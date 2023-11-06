@@ -1,15 +1,14 @@
+@import url('./assets/fonts/fonts.css');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-	font-family: 'Bekinder';
-	src: url('src/assets/fonts/Bekinder Bold.ttf') format('truetype');
-}
-
 @layer base {
 	html {
 		overflow-x: hidden !important;
+				font-family: 'Tw Cen MT Std Regular', sans-serif;
+
 	}
 	.bekinder {
 		font-family: Bekinder, sans-serif;
@@ -21,7 +20,7 @@
 		@apply rounded-md bg-slate-300 text-xl py-2 px-3 focus:placeholder:opacity-0  focus:caret-transparent focus:outline-slate-800;
 	}
 	.contact-lable {
-		@apply text-slate-700 text-sm;
+		@apply text-slate-700 text-base;
 	}
 	.hero-bg {
 		background-image: url('./assets/trailer-hero.jpg');
@@ -33,4 +32,13 @@
 }
 
 @layer utilities {
+	.cursive {
+		font-family: 'Second Lesson Regular', cursive;
+	}
+	.tw-standard {
+		font-family: 'Tw Cen MT Std Regular', sans-serif;
+	}
+	.tw-semi-medium {
+		font-family: 'Tw Cen MT Std Semi Medium', sans-serif;
+	}
 }

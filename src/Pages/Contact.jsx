@@ -1,5 +1,6 @@
 import Nav from '../Components/Nav';
 import { useForm, ValidationError } from '@formspree/react';
+//using FormSpree to handle form sending
 
 export default function Contact() {
 	const [state, handleSubmit] = useForm('xjvqzyye');
@@ -7,7 +8,7 @@ export default function Contact() {
 		return (
 			<>
 				<Nav />
-				<div className='w-3/4 mx-auto my-24 rounded-2xl bg-[#181C11] text-white text-center p-20'>
+				<div className='w-3/4 mx-auto my-24 rounded-2xl bg-[#181C11] text-white text-center px-2 py-20 lg:p-20'>
 					<p
 						className='text-3xl mb-6
 				'
@@ -56,22 +57,25 @@ export default function Contact() {
 	// 	setInputs({});
 	// };
 
-	//using https://dashboard.emailjs.com/admin for email service
-
 	return (
 		<>
 			<Nav />
 
-			<div className='flex'>
-				<div className='h-screen w-1/2 px-4 py-8'>
+			<div className='flex flex-col items-center lg:flex-row'>
+				<div className='lg:h-screen lg:w-1/2 px-4 py-8'>
 					<div className=' flex flex-col items-center justify-center h-full'>
-						<h1 className=' text-2xl font-bold'>Lets Get in Touch!</h1>
-						<p className='text-center'>
+						<h1 className=' text-3xl font-bold'>Let&apos;s Get in Touch!</h1>
+						<p className='text-center mb-6 mt-3 text-2xl opacity-80'>
 							Fill out our form and we will be in touch soon.
 						</p>
+						<img
+							src='src/assets/img/trailer-cheers.jpg'
+							alt='Kendra and Michael Buehn Cheersing in front of mobile Bar'
+							className=' w-4/5 hidden lg:block '
+						/>
 					</div>
 				</div>
-				<div className=' w-1/2 p-8 max-w-4xl'>
+				<div className=' lg:w-1/2 p-8 max-w-4xl'>
 					<form
 						onSubmit={handleSubmit}
 						className=' bg-slate-200 rounded-xl flex items-center justify-around p-12 flex-wrap my-2'
