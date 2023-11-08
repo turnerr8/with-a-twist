@@ -78,7 +78,7 @@ export default function Contact() {
 				<div className=' lg:w-1/2 p-8 max-w-4xl'>
 					<form
 						onSubmit={handleSubmit}
-						className=' bg-slate-200 rounded-xl flex items-center justify-around p-12 flex-wrap my-2'
+						className=' bg-[#c99770] rounded-xl flex items-center justify-around p-12 flex-wrap my-2'
 					>
 						<div className='flex flex-col m-3  w-[40%] grow'>
 							<label className='contact-lable' htmlFor='name'>
@@ -222,7 +222,7 @@ export default function Contact() {
 							/>
 						</div>
 						<input
-							className='contact-input !grow-0 w-1/2 mt-5 bg-slate-900 text-slate-100 focus:text-slate-900 focus:bg-slate-100 cursor-pointer hover:text-slate-900 hover:bg-slate-100'
+							className='contact-input !grow-0 w-1/2 mt-5 bg-[#181C11] text-slate-100 focus:text-[#181C11] focus:bg-slate-100 cursor-pointer hover:text-slate-900 hover:bg-slate-100'
 							type='submit'
 							value='Send'
 						/>

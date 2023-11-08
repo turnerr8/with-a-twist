@@ -66,17 +66,11 @@ export default function Home() {
 				<Link to='gallery'>Gallery</Link>
 				<Link to='packages'>Packages</Link>
 			</div>
-			<div className='BODY bg-white'>
-				<div className='  lg:mx-36 p-16 text-lg text-center text-[#292716]'>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem omnis
-					reprehenderit iste nesciunt error nihil assumenda est asperiores
-					aliquam. Error nam pariatur voluptas tenetur modi odit nulla eius ex
-					velit? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-					Consequatur ea vero voluptatum ipsa fugit nemo molestias odit beatae,
-					minus ad expedita dolorum fugiat harum molestiae odio error atque quis
-					nobis! Lorem ipsum dolor sit amet consectetur, adipisicing elit. At
-					maxime repellat cum debitis, aut enim nisi eius corporis eveniet sunt
-					quae, eaque odio, ut a architecto quisquam quis dolore rerum.
+			<div className='BODY bg-[#f1f4f6]'>
+				<div className='  lg:mx-36 px-16 py-24  text-4xl text-center text-[#292716]'>
+					Bringing you exceptional bartending,
+					<br />
+					<span className='cursive'>with a twist!</span>
 				</div>
 
 				<div className='GALLERY-SNEEK-PEEK grid grid-cols-2 md:grid-cols-4 w-full '>
@@ -91,9 +85,9 @@ export default function Home() {
 					})}
 					<Link
 						to='/gallery'
-						className=' group w-full h-[33vw] md:h-[25vw] flex items-center justify-center bg-[#B38364] p-4'
+						className=' group w-full h-[33vw] md:h-[25vw] flex items-center justify-center bg-[#c99770] p-4'
 					>
-						<div className=' text-xl md:text-2xl  lg:text-5xl text-white group-hover:scale-110 ease-in-out'>
+						<div className=' text-xl md:text-2xl  lg:text-5xl text-[white] group-hover:scale-110 ease-in-out'>
 							<span>
 								View full
 								<br /> gallery
@@ -116,7 +110,28 @@ export default function Home() {
 					</Link>
 				</div>
 
-				<div className=''>What we offer</div>
+				<div className='lg:mx-36 mt-16 pb-12 mx-8 px text-lg text-center  text-[#292716]'>
+					<h1 className='text-3xl mb-6'>What we offer</h1>
+					<p className='md:text-justify'>
+						With a Twist is a mobile bar that offers exceptional service for
+						exceptional events! Run by Kendra and Michael Buehn &mdash; two
+						licensed, permitted, and insured bartenders &mdash; who had a bit
+						too much time on their hands and decided to build a mobile bar. With
+						a Twist is the perfect way to bring your wedding, birthday, reunion,
+						or any other special event up to the next level.
+					</p>
+					<p className='mt-6 '>
+						For basic package information visit our{' '}
+						<Link className='underline' to='packages'>
+							Packages
+						</Link>{' '}
+						page or{' '}
+						<Link className=' underline' to='/contact'>
+							Send us a message
+						</Link>
+						!{' '}
+					</p>
+				</div>
 			</div>
 		</>
 	);
