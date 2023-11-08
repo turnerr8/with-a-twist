@@ -1,10 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-const imgs = [
-	'/src/assets/img/trailer-cheers.jpg',
-	'src/assets/img/IMG_2315.JPG',
-	'src/assets/img/IMG_2331.JPG',
-];
+const imgs = ['/trailer-cheers.jpg', '/IMG_2315.JPG', '/IMG_2331.JPG'];
 
 export default function Home() {
 	const [openMenu, setOpenMenu] = useState(false);
@@ -30,7 +26,7 @@ export default function Home() {
 
 					<Link to='/' className='h-5/6  '>
 						<img
-							src='src/assets/logo-vert-white.png'
+							src='/logo-vert-white.png'
 							alt='with a twist vertical logo'
 							className='h-full w-auto  '
 						/>
@@ -62,7 +58,7 @@ export default function Home() {
 				<Link to='contact'>Contact</Link>
 				<Link to='/' className='h-5/6'>
 					<img
-						src='src/assets/logo-vert-white.png'
+						src='/logo-vert-white.png'
 						alt='with a twist vertical logo'
 						className='h-full w-auto'
 					/>

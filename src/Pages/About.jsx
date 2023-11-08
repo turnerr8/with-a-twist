@@ -11,7 +11,7 @@ export default function About() {
 					className='w-1/2 bg-cover bg-center bg-no-repeat h-full'
 					style={{
 						backgroundImage:
-							'url("src/assets/467C2503-033E-47F3-A374-D0211A73C1A1.jpg")',
+							'url("/467C2503-033E-47F3-A374-D0211A73C1A1.jpg")',
 					}}
 				></div>
 			</div>

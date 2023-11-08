@@ -19,7 +19,7 @@
 		@apply text-slate-700 text-base;
 	}
 	.hero-bg {
-		background-image: url('./assets/trailer-hero.jpg');
+		background-image: url('/trailer-hero.jpg');
 		background-position: center;
 		background-repeat: no-repeat;
 		background-attachment: fixed;

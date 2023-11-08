@@ -69,7 +69,7 @@ export default function Contact() {
 							Fill out our form and we will be in touch soon.
 						</p>
 						<img
-							src='src/assets/img/trailer-cheers.jpg'
+							src='/trailer-cheers.jpg'
 							alt='Kendra and Michael Buehn Cheersing in front of mobile Bar'
 							className=' w-4/5 hidden lg:block '
 						/>

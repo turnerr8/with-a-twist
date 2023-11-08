@@ -10,7 +10,7 @@ export default function Nav() {
 				<Link to='/contact'>Contact</Link>
 				<Link to='/' className='h-5/6'>
 					<img
-						src='src/assets/logo-vert-white.png'
+						src='/logo-vert-white.png'
 						alt='with a twist vertical logo'
 						className=' h-[3em]'
 					/>
@@ -35,7 +35,7 @@ export default function Nav() {
 
 					<Link to='/' className='h-5/6  '>
 						<img
-							src='src/assets/logo-vert-white.png'
+							src='/logo-vert-white.png'
 							alt='with a twist vertical logo'
 							className='h-full w-auto  '
 						/>
