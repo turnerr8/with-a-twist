@@ -6,10 +6,10 @@ export default function Home() {
 	const [openMenu, setOpenMenu] = useState(false);
 	return (
 		<>
-			<div className='w-screen h-screen hero-bg fixed -z-30'></div>
-			<div className='h-[90vh]'></div>
+			<div className='w-screen md:h-screen h-[50vh] hero-bg fixed -z-30'></div>
+			<div className='md:h-[90vh] h-[50vh]'></div>
 
-			<div className='MOBILE-NAV  w-screen sticky top-0 h-[10vh] bg-[#181C11] text-white lg:hidden  '>
+			<div className='MOBILE-NAV  w-screen sticky top-0 h-[10vh] bg-[#181C11] text-white lg:hidden cursive  '>
 				<div className='flex justify-between items-center h-full px-6'>
 					{openMenu ? (
 						<di onClick={() => setOpenMenu(false)}>x</di>
@@ -35,7 +35,7 @@ export default function Home() {
 				<div
 					className={`MOBILE-NAV-SHOWN  ${
 						openMenu ? 'flex' : 'hidden'
-					} bg-[#181C11] border-t-2 border-neutral-800 items-center justify-center text-3xl py-6 `}
+					} bg-[#181C11] border-t-2 border-neutral-800 items-center justify-center text-2xl py-6 `}
 				>
 					<ul className='space-y-4'>
 						<li>
@@ -53,7 +53,7 @@ export default function Home() {
 					</ul>
 				</div>
 			</div>
-			<div className=' DESKTOP-NAV w-screen hidden lg:flex justify-around items-center sticky top-0 h-[10vh] bg-[#181C11] text-white text-2xl tw-semi-medium'>
+			<div className=' DESKTOP-NAV w-screen hidden lg:flex justify-around items-center sticky top-0 h-[10vh] bg-[#181C11]  text-white text-xl cursive'>
 				<Link to='about'>About</Link>
 				<Link to='contact'>Contact</Link>
 				<Link to='/' className='h-5/6'>
@@ -93,10 +93,7 @@ export default function Home() {
 						to='/gallery'
 						className=' group w-full h-[33vw] md:h-[25vw] flex items-center justify-center bg-[#B38364] p-4'
 					>
-						<div
-							to='/gallery'
-							className='  text-5xl text-white group-hover:scale-110 ease-in-out'
-						>
+						<div className=' text-xl md:text-2xl  lg:text-5xl text-white group-hover:scale-110 ease-in-out'>
 							<span>
 								View full
 								<br /> gallery
