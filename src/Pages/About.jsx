@@ -16,8 +16,8 @@ export default function About() {
 					}}
 				></div>
 			</div>
-			<div className=' px-10 md:px-24 py-16 md:py-16 md:text-lg'>
-				<p>
+			<div className=' px-10 md:px-24 py-16 md:py-16 md:text-xl'>
+				<p className=' first-letter:cursive first-letter:text-3xl'>
 					Hello we are Kendra and Michael Buehn! We are both CWU grads and now
 					Ellensburg locals. What started as a fun idea, soon turned into one
 					our first projects as an engaged couple. We&apos;ve spent the last
