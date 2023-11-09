@@ -12,7 +12,19 @@ export default function Home() {
 			<div className='MOBILE-NAV  w-screen sticky top-0 h-[10vh] bg-[#181C11] text-white lg:hidden cursive  '>
 				<div className='flex justify-between items-center h-full px-6'>
 					{openMenu ? (
-						<di onClick={() => setOpenMenu(false)}>x</di>
+						<div onClick={() => setOpenMenu(false)}>
+							<svg
+								className=' h-12 animate-pulse fill-gray-600'
+								clipRule='evenodd'
+								fillRule='evenodd'
+								strokeLinejoin='round'
+								strokeMiterlimit='2'
+								viewBox='0 0 24 24'
+								xmlns='http://www.w3.org/2000/svg'
+							>
+								<path d='m12 10.93 5.719-5.72c.146-.146.339-.219.531-.219.404 0 .75.324.75.749 0 .193-.073.385-.219.532l-5.72 5.719 5.719 5.719c.147.147.22.339.22.531 0 .427-.349.75-.75.75-.192 0-.385-.073-.531-.219l-5.719-5.719-5.719 5.719c-.146.146-.339.219-.531.219-.401 0-.75-.323-.75-.75 0-.192.073-.384.22-.531l5.719-5.719-5.72-5.719c-.146-.147-.219-.339-.219-.532 0-.425.346-.749.75-.749.192 0 .385.073.531.219z' />
+							</svg>
+						</div>
 					) : (
 						<div
 							className='HAMBURGER-ICON space-y-2'
@@ -35,7 +47,7 @@ export default function Home() {
 				<div
 					className={`MOBILE-NAV-SHOWN  ${
 						openMenu ? 'flex' : 'hidden'
-					} bg-[#181C11] border-t-2 border-neutral-800 items-center justify-center text-2xl py-6 `}
+					} bg-[#181C11]  border-neutral-800 items-center justify-center text-2xl py-6 `}
 				>
 					<ul className='space-y-4'>
 						<li>
@@ -67,10 +79,10 @@ export default function Home() {
 				<Link to='packages'>Packages</Link>
 			</div>
 			<div className='BODY bg-[#f1f4f6]'>
-				<div className='  lg:mx-36 px-16 py-24  text-4xl text-center text-[#292716]'>
-					Bringing you exceptional bartending,
-					<br />
-					<span className='cursive'>with a twist!</span>
+				<div className='  lg:mx-36 md:px-16 px-4 py-24  text-4xl text-center text-[#292716]'>
+					<p>Bringing you exceptional bartending,</p>
+
+					<p className='cursive text-5xl mt-4'>with a twist!</p>
 				</div>
 
 				<div className='GALLERY-SNEEK-PEEK grid grid-cols-2 md:grid-cols-4 w-full '>
@@ -110,9 +122,9 @@ export default function Home() {
 					</Link>
 				</div>
 
-				<div className='lg:mx-36 mt-16 pb-12 mx-8 px text-lg text-center  text-[#292716]'>
+				<div className='lg:mx-36 mt-16 pb-12 mx-8 px text-lg text-center text-[#292716]'>
 					<h1 className='text-3xl mb-6'>What we offer</h1>
-					<p className='md:text-justify'>
+					<p className='md:text-justify md:text-xl'>
 						With a Twist is a mobile bar that offers exceptional service for
 						exceptional events! Run by Kendra and Michael Buehn &mdash; two
 						licensed, permitted, and insured bartenders &mdash; who had a bit
@@ -120,7 +132,7 @@ export default function Home() {
 						a Twist is the perfect way to bring your wedding, birthday, reunion,
 						or any other special event up to the next level.
 					</p>
-					<p className='mt-6 '>
+					<p className='mt-6 text md:text-xl '>
 						For basic package information visit our{' '}
 						<Link className='underline' to='packages'>
 							Packages

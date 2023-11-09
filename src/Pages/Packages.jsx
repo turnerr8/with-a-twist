@@ -8,9 +8,9 @@ export default function Packages() {
 			<div className=' px-[7vw] py-12  mx-[10vw] my-16'>
 				<h1 className='text-4xl'>Packages we offer:</h1>
 
-				<div className='  grid md:grid-cols-3 py-8'>
+				<div className='  grid md:grid-cols-3 py-8 md:text-xl'>
 					<div className='flex flex-col m-4 mb-8 rounded-xl bg-slate-100 p-6 '>
-						<h3 className='PACKAGE-TITLE text-xl w-fit mb-4'>
+						<h3 className='PACKAGE-TITLE text-2xl w-fit mb-4 '>
 							Basic Bar Service
 						</h3>
 						<ul className=' list-disc'>
@@ -19,7 +19,7 @@ export default function Packages() {
 						</ul>
 					</div>
 					<div className='flex flex-col m-4 mb-8 rounded-xl bg-slate-100 p-6'>
-						<h3 className=' PACKAGE-TITLE text-xl w-fit mb-4'>
+						<h3 className=' PACKAGE-TITLE text-2xl w-fit mb-4 '>
 							Full Bar Service
 						</h3>
 						<ul className=' list-disc'>
@@ -28,7 +28,7 @@ export default function Packages() {
 						</ul>
 					</div>
 					<div className='flex flex-col m-4 mb-8 rounded-xl bg-slate-100 p-6'>
-						<h3 className='PACKAGE-TITLE text-xl w-fit mb-4'>
+						<h3 className='PACKAGE-TITLE text-2xl w-fit mb-4 '>
 							Bartending Only
 						</h3>
 						<ul className=' list-disc'>
