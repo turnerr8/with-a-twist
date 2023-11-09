@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
-import { motion } from 'framer-motion';
 
 export default function Nav() {
 	const [openMenu, setOpenMenu] = useState(false);
