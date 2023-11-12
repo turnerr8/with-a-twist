@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom';
 import Nav from '../Components/Nav';
+import Header from '../Components/Header';
 
 export default function PageNotFound() {
 	return (
 		<>
+			<Header title='Page Not Found' />
 			<Nav />
 			<div className='flex flex-col items-center justify-center '>
 				<svg

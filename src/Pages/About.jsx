@@ -1,7 +1,10 @@
 import Nav from '../Components/Nav';
+import Header from '../Components/Header';
 export default function About() {
 	return (
 		<>
+			<Header title='About' desc="Hello we are Kendra and Michael Buehn! We are both CWU grads and now Ellensburg locals. What started as a fun idea, soon turned into one our first projects as an engaged couple. We've spent the last year and a half tearing this trailer down to its bones and building it back up into our modern vision. Our combined experiences with event planning and weddings uniquely equip us to be a key part of your day-of team and ensure that your event runs smoothly. Thank you for taking the time to visit our website, we look forward to hearing you! With A Twist's first official event this summer was our wedding!" />
+
 			<Nav></Nav>
 			<div className='h-[50vh] flex'>
 				<div className=' w-1/2 bg-[#5b5e4d] flex items-center justify-center h-full'>
