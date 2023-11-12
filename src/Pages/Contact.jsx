@@ -11,12 +11,12 @@ export default function Contact() {
 			<Header title='Contact' desc='Contact us about serving at your next event!' />
 				<Nav />
 				<div className='w-3/4 mx-auto my-24 rounded-2xl bg-[#181C11] text-white text-center px-2 py-20 lg:p-20'>
-					<p
+					<h3
 						className='text-3xl mb-6
 				'
 					>
 						Thanks for your message, We will be in touch soon!
-					</p>
+					</h3>
 					<p className='text-3xl opacity-80'>
 						Meanwhile, follow us to stay up to date!
 					</p>

@@ -116,7 +116,7 @@ export default function Home() {
 				</div>
 
 				<div className='lg:mx-36 mt-16 pb-12 mx-8 px text-lg text-center  text-[#292716]'>
-					<h1 className='text-3xl mb-6'>What we offer</h1>
+					<h3 className='text-3xl mb-6'>What we offer</h3>
 					<p className='md:text-justify'>
 						With a Twist is a mobile bar that offers exceptional service for
 						exceptional events! Run by Kendra and Michael Buehn &mdash; two
