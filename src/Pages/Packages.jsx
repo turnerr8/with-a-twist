@@ -1,9 +1,11 @@
+import Header from '../Components/Header';
 import Nav from '../Components/Nav';
 import { Link } from 'react-router-dom';
 
 export default function Packages() {
 	return (
 		<>
+		<Header title='Packages' desc='We have an array of packages to choose from, whether you need full bar service or just a few extra hands.' />
 			<Nav />
 			<div className=' px-[7vw] py-12  mx-[10vw] my-16'>
 				<h1 className='text-4xl'>Packages we offer:</h1>

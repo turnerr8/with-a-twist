@@ -4,6 +4,7 @@ import Nav from '../Components/Nav';
 import { getImages } from '../firebaseConfig';
 import { useEffect, useState } from 'react';
 import { Loader } from '../Components/Loader';
+import Header from '../Components/Header';
 
 export default function Gallery() {
 	const [imageArray, setImageArray] = useState([]);
@@ -18,6 +19,11 @@ export default function Gallery() {
 
 	return (
 		<>
+			<Header
+				title='Gallery'
+				desc='Check out pictures of our vintage trailer and our past events.'
+				keywords='gallery, images, With a Twist, bar, alcohol, beer, wine, wedding, event, '
+			/>
 			{!isLoaded && <Loader />}
 			<Nav />
 			<div className=' bg-[#181C11] grid md:grid-cols-gallery sm:grid-cols-gallery-md gap-[20px] px-12 py-12'>

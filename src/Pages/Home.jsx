@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
+import Header from '../Components/Header';
 const imgs = ['/trailer-cheers.jpg', '/IMG_2315.JPG', '/IMG_2331.JPG'];
 
 export default function Home() {
 	const [openMenu, setOpenMenu] = useState(false);
 	return (
 		<>
+			<Header
+				title='Home'
+				desc='With a Twist is a mobile bar that offers exceptional service for exceptional events! Run by Kendra and Michael Buehn — two licensed, permitted, and insured bartenders — who had a bit too much time on their hands and decided to build a mobile bar. With a Twist is the perfect way to bring your wedding, birthday, reunion, or any other special event up to the next level.'
+			/>
 			<div className='w-screen md:h-screen h-[50vh] hero-bg fixed -z-30'></div>
 			<div className='md:h-[90vh] h-[50vh]'></div>
 

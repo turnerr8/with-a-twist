@@ -1,3 +1,4 @@
+import Header from '../Components/Header';
 import Nav from '../Components/Nav';
 import { useForm, ValidationError } from '@formspree/react';
 //using FormSpree to handle form sending
@@ -7,6 +8,7 @@ export default function Contact() {
 	if (state.succeeded) {
 		return (
 			<>
+			<Header title='Contact' desc='Contact us about serving at your next event!' />
 				<Nav />
 				<div className='w-3/4 mx-auto my-24 rounded-2xl bg-[#181C11] text-white text-center px-2 py-20 lg:p-20'>
 					<p
