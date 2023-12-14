@@ -1,5 +1,23 @@
-### With a Twist Mobile bar
+## With a Twist Mobile bar
 
+### Overview
+Website for With a Twist Mobile Bar. Includes pages for gallery images, contact, and bios.
+
+### Structure
+- .firebase
+  - files from firebase for hosting
+- .github
+  - contains github actions `.yaml` files
+- public
+  - contains all static images
+- src
+  - assets
+    - fonts
+      - contains local fonts
+    - Components
+      - contains a few, reusable components
+    - Pages
+      - **Bulk of the site.** contains all pages
 # Inspo
 * [here](https://cocktailcollectivemobilebarco.com/)
 * [here](https://www.sipwithgoldie.com/index.php/about/)
