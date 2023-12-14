@@ -26,7 +26,7 @@ export default function Gallery() {
 			/>
 			{!isLoaded && <Loader />}
 			<Nav />
-			<div className=' bg-[#181C11] grid md:grid-cols-gallery sm:grid-cols-gallery-md gap-[20px] px-12 py-12'>
+			<div className=' bg-[#181C11] columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-[25px] px-12 py-12 space-y-[20px]'>
 				{imageArray.map((img) => {
 					return <Image img={img} key={img.id} />;
 				})}
@@ -55,7 +55,7 @@ function Image({ img }) {
 			{isExpanded && <Modal url={img.imageURL} toggleModal={toggleModal} />}
 			<div
 				key={img.id}
-				className=' w-full h-full object-cover transition-transform ease-in-out hover:scale-105 cursor-pointer'
+				className=' w-full auto object-cover transition-transform ease-in-out hover:scale-105 cursor-pointer  '
 				onClick={toggleModal}
 			>
 				<img src={img.imageURL} alt='image of trailer'></img>
