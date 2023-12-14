@@ -26,7 +26,7 @@ export default function Gallery() {
 			/>
 			{!isLoaded && <Loader />}
 			<Nav />
-			<div className=' bg-[#181C11] columns-1 sm:columns-2 lg:columns-3 xl:columns-4 gap-[25px] px-12 py-12 space-y-[20px]'>
+			<div className=' bg-[#181C11] columns-1 sm:columns-2  xl:columns-3 gap-[25px] px-12 py-12 space-y-[25px]'>
 				{imageArray.map((img) => {
 					return <Image img={img} key={img.id} />;
 				})}
@@ -41,12 +41,8 @@ function Image({ img }) {
 	const toggleModal = () => {
 		if (isExpanded) {
 			setIsExpanded(false);
-			document.body.style.overflow = 'unset';
 		} else {
 			setIsExpanded(true);
-			if (typeof window !== 'undefined' && window.document) {
-				document.body.style.overflow = 'hidden';
-			}
 		}
 	};
 
@@ -66,7 +62,7 @@ function Image({ img }) {
 
 function Modal({ url, toggleModal }) {
 	return (
-		<div className='w-screen h-screen bg-[#000000bc] z-50  fixed top-0 left-0 overflow-hidden flex items-center justify-center py-16 px-8 sm:px-24  '>
+		<div className=' MODAL !mt-0 w-screen h-screen bg-[#000000bc] z-50  fixed top-0 left-0 overflow-hidden flex items-center justify-center py-16 px-8 sm:px-24  '>
 			<svg
 				className=' fill-white h-12 absolute right-12 top-8 cursor-pointer hover:opacity-60'
 				onClick={toggleModal}
