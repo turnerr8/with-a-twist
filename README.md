@@ -1,9 +1,11 @@
 ## With a Twist Mobile bar
 
 ### Overview
+
 Website for With a Twist Mobile Bar. Includes pages for gallery images, contact, and bios.
 
 ### Structure
+
 - .firebase
   - files from firebase for hosting
 - .github
@@ -18,27 +20,32 @@ Website for With a Twist Mobile Bar. Includes pages for gallery images, contact,
       - contains a few, reusable components
     - Pages
       - **Bulk of the site.** contains all pages
+
 # Inspo
-* [here](https://cocktailcollectivemobilebarco.com/)
-* [here](https://www.sipwithgoldie.com/index.php/about/)
+
+- [here](https://cocktailcollectivemobilebarco.com/)
+- [here](https://www.sipwithgoldie.com/index.php/about/)
 
 # Needs:
-* big pic on top
-* large logo shinks down to navbar which appears once the picture is scrolled past navbar at bottom
 
+- big pic on top
+- large logo shinks down to navbar which appears once the picture is scrolled past navbar at bottom
 
 # Pages:
-* About
-* gallery
-* contact
-  * name
-  * email
-  * phone n
-  * location
-  * event type
-  * num people
-  * date
-  * more..
-* packages( and pricing)
-  * package costs
-  * package types
+
+- About
+- gallery
+- contact
+  - name
+  - email
+  - phone n
+  - location
+  - event type
+  - num people
+  - date
+  - more..
+- packages( and pricing)
+  - package costs
+  - package types
+
+### [Changelog](./changelog.md)
