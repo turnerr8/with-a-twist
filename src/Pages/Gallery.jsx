@@ -24,12 +24,13 @@ export default function Gallery() {
 				desc='Check out pictures of our vintage trailer and our past events.'
 				keywords='gallery, images, With a Twist, bar, alcohol, beer, wine, wedding, event, '
 			/>
-			{!isLoaded && <Loader />}
 			<Nav />
+			{!isLoaded && <Loader />}
 			<div className=' bg-[#181C11] columns-1 sm:columns-2  xl:columns-3 gap-[25px] px-12 py-12 space-y-[25px]'>
-				{imageArray.map((img) => {
-					return <Image img={img} key={img.id} />;
-				})}
+				{isLoaded &&
+					imageArray.map((img) => {
+						return <Image img={img} key={img.id} />;
+					})}
 			</div>
 		</>
 	);
