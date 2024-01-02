@@ -127,15 +127,13 @@ export default function Home() {
 					</Link>
 				</div>
 
-
 				<div className='lg:mx-36 mt-16 pb-12 mx-8 px text-lg text-center  text-[#292716]'>
 					<h3 className='text-3xl mb-6'>What we offer</h3>
 					<p className='md:text-justify'>
-
-						With a Twist is a mobile bar that offers exceptional service for
-						exceptional events! Run by Kendra and Michael Buehn &mdash; two
-						licensed, permitted, and insured bartenders &mdash; who had a bit
-						too much time on their hands and decided to build a mobile bar. With
+						With a Twist Mobile Bar LLC is a mobile bartending company offering
+						exceptional service for exceptional events! The bar is fully staffed
+						with licensed and insured bartenders serving out of their trendy
+						vintage camper trailer renovated to pour drinks in any setting. With
 						a Twist is the perfect way to bring your wedding, birthday, reunion,
 						or any other special event up to the next level.
 					</p>
