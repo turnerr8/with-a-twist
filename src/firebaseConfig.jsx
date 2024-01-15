@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from 'firebase/app';
-//import { getAnalytics } from 'firebase/analytics';
+import { getAnalytics } from 'firebase/analytics';
 import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { getAuth } from 'firebase/auth';
 import {
@@ -32,7 +32,7 @@ export const storage = getStorage(app);
 
 export const db = getFirestore(app);
 const imagesCollection = collection(db, 'images');
-
+const analytics = getAnalytics(app);
 export const handleUpload = async (files) => {
 	files.map((file) => {
 		const storageRef = ref(storage, `images/${file.name}`);
