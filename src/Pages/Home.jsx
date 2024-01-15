@@ -21,7 +21,7 @@ export default function Home() {
 			<div className='w-screen md:h-screen h-[50vh] hero-bg fixed -z-30'></div>
 			<div className='md:h-[90vh] h-[50vh]'></div>
 
-			<div className='MOBILE-NAV  w-screen sticky top-0 h-[10vh] bg-[#181C11] text-white lg:hidden cursive  '>
+			<div className='MOBILE-NAV  w-screen sticky top-0 h-[10vh] bg-[#181C11] text-white lg:hidden cursive text-5xl  '>
 				<div className='flex justify-between items-center h-full px-6'>
 					{openMenu ? (
 						<div onClick={() => setOpenMenu(false)}>
@@ -59,7 +59,7 @@ export default function Home() {
 				<div
 					className={`MOBILE-NAV-SHOWN  ${
 						openMenu ? 'flex' : 'hidden'
-					} bg-[#181C11]  border-neutral-800 items-center justify-center text-2xl py-6 `}
+					} bg-[#181C11]  border-neutral-800 items-center justify-center  py-6 `}
 				>
 					<ul className='space-y-4'>
 						<li>
@@ -94,7 +94,7 @@ export default function Home() {
 				<div className='  lg:mx-36 md:px-16 px-4 py-24  text-4xl text-center text-[#292716]'>
 					<p>Bringing you exceptional bartending,</p>
 
-					<p className='cursive text-5xl mt-4'>with a twist!</p>
+					<p className='cursive text-6xl mt-6'>with a twist!</p>
 				</div>
 
 				<div className='GALLERY-SNEEK-PEEK grid grid-cols-2 md:grid-cols-4 w-full '>

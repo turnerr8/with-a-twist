@@ -12,7 +12,7 @@ We are Kendra and Michael Buehn, owners and operators of With a Twist! We are bo
 			<Nav></Nav>
 			<div className='h-[50vh] flex'>
 				<div className=' w-1/2 bg-[#5b5e4d] flex items-center justify-center h-full'>
-					<h1 className=' text-4xl text-white cursive text-center'>
+					<h1 className=' text-6xl text-white cursive text-center'>
 						Our Story
 					</h1>
 				</div>
@@ -24,7 +24,7 @@ We are Kendra and Michael Buehn, owners and operators of With a Twist! We are bo
 				></div>
 			</div>
 			<div className=' px-10 md:px-24 py-16 md:py-16 md:text-xl'>
-				<p className=' first-letter:cursive first-letter:text-3xl'>
+				<p className=' first-letter:cursive first-letter:text-5xl'>
 					We are Kendra and Michael Buehn, owners and operators of With a Twist!
 					We are both licensed bartenders, graduates of Central Washington
 					University, and Kittitas County residents. Leading up to our own

@@ -12,7 +12,7 @@ export default function Packages() {
 			<Nav />
 			<div className=' px-[7vw] py-12  mx-[10vw] my-16'>
 				<h1 className='text-4xl'>Packages we offer:</h1>
-				<p>
+				<p className='text-2xl opacity-70'>
 					Bar service starts at $1,200 and scales depending on guest count and
 					drink selection.
 				</p>
