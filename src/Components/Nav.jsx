@@ -5,20 +5,20 @@ export default function Nav() {
 	const [openMenu, setOpenMenu] = useState(false);
 	return (
 		<>
-			<div className=' DESKTOP-NAV w-screen hidden lg:flex justify-around items-center  text-white  py-6 bg-[#181C11] text-xl z-50 cursive'>
+			<div className=' DESKTOP-NAV w-screen hidden lg:flex justify-around items-center  text-white  py-6 bg-[#181C11] text-5xl z-50 cursive'>
 				<Link to='/about'>About</Link>
 				<Link to='/contact'>Contact</Link>
 				<Link to='/' className='h-5/6'>
 					<img
 						src='/logo-vert-white.png'
 						alt='with a twist vertical logo'
-						className=' h-[3em]'
+						className=' h-[1.5em]'
 					/>
 				</Link>
 				<Link to='/gallery'>Gallery</Link>
 				<Link to='/packages'>Packages</Link>
 			</div>
-			<div className='MOBILE-NAV  w-screen sticky top-0 h-[10vh] bg-[#181C11] text-white lg:hidden z-50 cursive '>
+			<div className='MOBILE-NAV  w-screen sticky top-0 h-[10vh] bg-[#181C11] text-white lg:hidden z-50 cursive text-5xl'>
 				<div className='flex justify-between items-center h-full px-6'>
 					{openMenu ? (
 						<div onClick={() => setOpenMenu(false)}>
@@ -56,7 +56,7 @@ export default function Nav() {
 				<div
 					className={`MOBILE-NAV-SHOWN  ${
 						openMenu ? 'flex' : 'hidden'
-					} bg-[#181C11] border-t-2 border-neutral-800 items-center justify-center text-2xl py-6 `}
+					} bg-[#181C11] border-t-2 border-neutral-800 items-center justify-center py-6 `}
 				>
 					<ul className='space-y-4'>
 						<li>

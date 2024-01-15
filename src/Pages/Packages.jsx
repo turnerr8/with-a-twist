@@ -5,11 +5,17 @@ import { Link } from 'react-router-dom';
 export default function Packages() {
 	return (
 		<>
-		<Header title='Packages' desc='We have an array of packages to choose from, whether you need full bar service or just a few extra hands.' />
+			<Header
+				title='Packages'
+				desc='We have an array of packages to choose from, whether you need full bar service or just a few extra hands.'
+			/>
 			<Nav />
 			<div className=' px-[7vw] py-12  mx-[10vw] my-16'>
 				<h1 className='text-4xl'>Packages we offer:</h1>
-
+				<p className='text-2xl opacity-70'>
+					Bar service starts at $1,200 and scales depending on guest count and
+					drink selection.
+				</p>
 				<div className='  grid md:grid-cols-3 py-8 md:text-xl'>
 					<div className='flex flex-col m-4 mb-8 rounded-xl bg-slate-100 p-6 '>
 						<h3 className='PACKAGE-TITLE text-2xl w-fit mb-4 '>
@@ -42,7 +48,17 @@ export default function Packages() {
 						</ul>
 					</div>
 				</div>
-				<p className='text-xl'>For more information please <Link to='/contact' className=' text-neutral-600'>Contact Us</Link></p>
+				<p className='text-2xl my-7'>
+					The following can be added to any package: Bottled Water, Soda,
+					Lemonade, Coffee, and Tea.
+				</p>
+
+				<p className='text-xl'>
+					For more information please{' '}
+					<Link to='/contact' className=' text-neutral-600'>
+						Contact Us
+					</Link>
+				</p>
 			</div>
 		</>
 	);

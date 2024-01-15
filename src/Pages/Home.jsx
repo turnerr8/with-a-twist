@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import Header from '../Components/Header';
-const imgs = ['/trailer-cheers.jpg', '/IMG_2315.JPG', '/IMG_2331.JPG'];
+const imgs = ['/trailer_profile.jpg', '/IMG_2315.JPG', '/IMG_2331.JPG'];
 
 export default function Home() {
 	const [openMenu, setOpenMenu] = useState(false);
@@ -9,12 +9,19 @@ export default function Home() {
 		<>
 			<Header
 				title='Home'
-				desc='With a Twist is a mobile bar that offers exceptional service for exceptional events! Run by Kendra and Michael Buehn — two licensed, permitted, and insured bartenders — who had a bit too much time on their hands and decided to build a mobile bar. With a Twist is the perfect way to bring your wedding, birthday, reunion, or any other special event up to the next level.'
+				desc='With a Twist Mobile Bar LLC is a mobile bartending company offering
+						exceptional service for exceptional events! The bar is fully staffed
+						with licensed and insured bartenders serving out of their trendy
+						vintage camper trailer renovated to pour drinks in any setting. With
+						a Twist is the perfect way to bring your wedding, birthday, reunion,
+						or any other special event up to the next level. Located in
+						Ellensburg Washington, we are able to travel to most locations in
+						Washington.'
 			/>
 			<div className='w-screen md:h-screen h-[50vh] hero-bg fixed -z-30'></div>
 			<div className='md:h-[90vh] h-[50vh]'></div>
 
-			<div className='MOBILE-NAV  w-screen sticky top-0 h-[10vh] bg-[#181C11] text-white lg:hidden cursive  '>
+			<div className='MOBILE-NAV  w-screen sticky top-0 h-[10vh] bg-[#181C11] text-white lg:hidden cursive text-5xl  '>
 				<div className='flex justify-between items-center h-full px-6'>
 					{openMenu ? (
 						<div onClick={() => setOpenMenu(false)}>
@@ -52,7 +59,7 @@ export default function Home() {
 				<div
 					className={`MOBILE-NAV-SHOWN  ${
 						openMenu ? 'flex' : 'hidden'
-					} bg-[#181C11]  border-neutral-800 items-center justify-center text-2xl py-6 `}
+					} bg-[#181C11]  border-neutral-800 items-center justify-center  py-6 `}
 				>
 					<ul className='space-y-4'>
 						<li>
@@ -70,7 +77,7 @@ export default function Home() {
 					</ul>
 				</div>
 			</div>
-			<div className=' DESKTOP-NAV w-screen hidden lg:flex justify-around items-center sticky top-0 h-[10vh] bg-[#181C11]  text-white text-xl cursive'>
+			<div className=' DESKTOP-NAV w-screen hidden lg:flex justify-around items-center sticky top-0 h-[10vh] bg-[#181C11]  text-white text-5xl cursive'>
 				<Link to='about'>About</Link>
 				<Link to='contact'>Contact</Link>
 				<Link to='/' className='h-5/6'>
@@ -87,7 +94,7 @@ export default function Home() {
 				<div className='  lg:mx-36 md:px-16 px-4 py-24  text-4xl text-center text-[#292716]'>
 					<p>Bringing you exceptional bartending,</p>
 
-					<p className='cursive text-5xl mt-4'>with a twist!</p>
+					<p className='cursive text-6xl mt-6'>with a twist!</p>
 				</div>
 
 				<div className='GALLERY-SNEEK-PEEK grid grid-cols-2 md:grid-cols-4 w-full '>
@@ -135,7 +142,9 @@ export default function Home() {
 						with licensed and insured bartenders serving out of their trendy
 						vintage camper trailer renovated to pour drinks in any setting. With
 						a Twist is the perfect way to bring your wedding, birthday, reunion,
-						or any other special event up to the next level.
+						or any other special event up to the next level. Located in
+						Ellensburg Washington, we are able to travel to most locations in
+						Washington.
 					</p>
 					<p className='mt-6 text md:text-xl '>
 						For basic package information visit our{' '}

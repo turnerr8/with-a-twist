@@ -65,12 +65,15 @@
 		border-radius: 2px;
 	}
 	.cursive {
-		font-family: 'Second Lesson Regular', cursive;
+		font-family: 'Beautiful Feelings', cursive;
 	}
 	.tw-standard {
 		font-family: 'Tw Cen MT Std Regular', sans-serif;
 	}
 	.tw-semi-medium {
 		font-family: 'Tw Cen MT Std Semi Medium', sans-serif;
+	}
+	.tw-light {
+		font-family: 'TW Cen MT Std Light', sans-serif;
 	}
 }
